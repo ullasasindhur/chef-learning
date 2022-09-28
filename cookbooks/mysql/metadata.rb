@@ -1,22 +1,19 @@
-name              'mysql'
-maintainer        'Sous Chefs'
-maintainer_email  'help@sous-chefs.org'
-license           'Apache-2.0'
-description       'Provides mysql_service, mysql_config, and mysql_client resources'
-source_url        'https://github.com/sous-chefs/mysql'
-issues_url        'https://github.com/sous-chefs/mysql/issues'
-chef_version      '>= 15.5'
-version           '11.0.5'
+name 'mysql'
+maintainer 'Ullasa Poojith Sindhur'
+maintainer_email 'poojithullasa@gmail.com'
+license 'All Rights Reserved'
+description 'Installs/Configures mysql'
+version '0.1.0'
+chef_version '>= 16.0'
 
-depends 'apparmor'
+# The `issues_url` points to the location where issues for this cookbook are
+# tracked.  A `View Issues` link will be displayed on this cookbook's page when
+# uploaded to a Supermarket.
+#
+# issues_url 'https://github.com/<insert_org_here>/mysql/issues'
 
-%w(redhat centos scientific oracle).each do |el|
-  supports el, '>= 7.0'
-end
-
-supports 'amazon'
-supports 'fedora'
-supports 'debian', '>= 9.0'
-supports 'ubuntu', '>= 18.04'
-supports 'opensuseleap'
-supports 'suse', '>= 12.0'
+# The `source_url` points to the development repository for this cookbook.  A
+# `View Source` link will be displayed on this cookbook's page when uploaded to
+# a Supermarket.
+#
+# source_url 'https://github.com/<insert_org_here>/mysql'
